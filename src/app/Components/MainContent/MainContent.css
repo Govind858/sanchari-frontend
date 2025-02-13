@@ -1,62 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-.mainContent{
+
+.mainContent {
     display: flex;
-    
     flex-direction: row;
     width: 100%;
     height: auto;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
 }
 
-.tripForm{
+/* Trip Form */
+.tripForm {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-.tripContainer{
+/* Trip Container */
+.tripContainer {
     display: flex;
     gap: 10px;
     flex-direction: column;
-   
-    
-}
-#tripLoc{
-    height: 45px;
-    width: 250px;
-    border-radius: 8px;
+    align-items: center;
 }
 
-#tripLoc::placeholder{
+/* Input Fields */
+#tripLoc {
+    height: 45px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/* Placeholder */
+#tripLoc::placeholder {
     padding-left: 10px;
 }
 
-.tagLine{
+/* Tagline */
+.tagLine {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
+    text-align: center;
     margin-top: 70px;
 }
 
-#seePrice{
+/* Tagline Text */
+.tagLineContent {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+
+/* Button */
+#seePrice {
     border-radius: 8px;
     background-color: black;
     color: white;
     height: 45px;
     width: 117px;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-.tagLineContent{
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
-    font-size: 100px;
-    color: white;
+#seePrice:hover {
+    background-color: #333;
 }
 
-#heading{
-    /* text-align: center; */
+/* Heading */
+#heading {
     font-size: 50px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tagLineContent {
+        font-size: 80px;
+    }
+
+    #heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tripForm,
+    .tagLine {
+        width: 100%;
+    }
+
+    .tagLineContent {
+        font-size: 60px;
+    }
+
+    #tripLoc {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tagLineContent {
+        font-size: 40px;
+    }
+
+    #heading {
+        font-size: 32px;
+    }
+
+    #tripLoc {
+        width: 100%;
+    }
+
+    #seePrice {
+        width: 100%;
+        max-width: 200px;
+    }
 }
