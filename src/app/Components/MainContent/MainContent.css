@@ -8,12 +8,23 @@
     flex-wrap: wrap; /* Ensures wrapping on smaller screens */
 }
 
+
+/* .tripForm{
+=======
 /* Trip Form */
 .tripForm {
+
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
+} */
+
+
+
+
 }
 
 /* Trip Container */
@@ -40,6 +51,7 @@
     padding-left: 10px;
 }
 
+
 /* Tagline */
 .tagLine {
     display: flex;
@@ -49,6 +61,8 @@
     text-align: center;
     margin-top: 70px;
 }
+
+
 
 /* Tagline Text */
 .tagLineContent {
@@ -71,12 +85,17 @@
     transition: 0.3s ease-in-out;
 }
 
+
 #seePrice:hover {
     background-color: #333;
 }
 
+
+#heading{
+
 /* Heading */
 #heading {
+
     font-size: 50px;
     text-align: center;
 }

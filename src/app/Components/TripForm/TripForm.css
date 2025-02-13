@@ -1,0 +1,55 @@
+.tripForm{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.tripContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#tripLoc::placeholder{
+    padding-left: 10px;
+}
+
+
+
+#seePrice{
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    height: 45px;
+    width: 117px;
+    font-weight: bold;
+}
+
+
+.tripLoc{
+    height: 47px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-indent: 20px;
+}
+
+
+#clearBtn{
+    padding-left: 15px;
+}
+
+.item{
+    border: 1px solid transparent;
+    width: 350px;
+    height: 47px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.item:focus-within{
+    border-color: blue;
+}

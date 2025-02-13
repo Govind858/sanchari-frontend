@@ -1,0 +1,21 @@
+
+.tagLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 70px;
+}
+
+
+
+.tagLineContent{
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+
+#heading{
+    font-size: 50px;
+}

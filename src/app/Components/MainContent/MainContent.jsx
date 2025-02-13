@@ -14,8 +14,10 @@ function MainContent() {
             <div> <input id='tripLoc' type="text" placeholder='Dropoff Location'/></div>
             <div><button id='seePrice'>see pirce</button></div>
           </form> */}
+
           {/* <Login/> */}
           <TripDetails/>
+
         </div>
         <div className='tagLine'>
           {/* <div className='tagLineContent'>
