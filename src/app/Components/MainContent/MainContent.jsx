@@ -7,11 +7,11 @@ function MainContent() {
     <div className='mainContent'>
       
         <div className='tripForm'>
-          <form action="" className='tripContainer'>
+          {/* <form action="" className='tripContainer'>
             <div><input id='tripLoc' type="text"  placeholder='Pickup Location'/></div>
             <div> <input id='tripLoc' type="text" placeholder='Dropoff Location'/></div>
             <div><button id='seePrice'>see pirce</button></div>
-          </form>
+          </form> */}
         </div>
         <div className='tagLine'>
           <div className='tagLineContent'>
