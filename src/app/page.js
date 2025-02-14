@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <div style={backgroundStyle}>
-      <Header />
+      {/* <Header /> */}
       <MainContent/>
       <div style={rowStyle}>
       {/* <TripForm/> */}
