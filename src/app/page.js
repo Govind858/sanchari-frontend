@@ -3,6 +3,7 @@ import MainContent from "./Components/MainContent/MainContent";
 import Header from "./Components/Header/Header";
 import TripForm from "./Components/TripForm/TripForm";
 import TagLine from "./Components/TagLine/TagLine";
+import Login from "./Components/LoginComponent/Login";
 
 export default function Home() {
   const backgroundStyle = {
@@ -25,20 +26,15 @@ export default function Home() {
   
 
 
-    backgroundSize: "cover", // Or "contain" depending on your need
-    backgroundPosition: "center",
-    height: "100vh", // Full screen height
-    width: "100vw",  // Full screen width
-    background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%)"
-  };
+   
   
 
   return (
     <div style={backgroundStyle}>
       <Header />
+      <MainContent/>
       <div style={rowStyle}>
-      <TripForm/>
-      <TagLine/>
+      {/* <TripForm/> */}
       </div>
     </div>
   );
